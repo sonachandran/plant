@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './App.css'
+import Nav from './components/Nav'
+import Plant from './components/Plant'
+import Houseplant from './components/Houseplant';
+import Picture from './components/Picture';
+import { Grid } from './components/Grid';
 import reportWebVitals from './reportWebVitals';
+import { Reviews } from './components/Reviews';
+import { Photo } from './components/Photo';
+import { Foot } from './components/Foot';
+// import { Plants } from './plants';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <Nav/>
+  <Plant/> 
+  <Houseplant/>
+  <Picture/>
+  <Grid/>
+  <Reviews/>
+  <Photo/>
+  <Foot/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
+
